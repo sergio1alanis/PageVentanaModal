@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.app {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 3, 3, 0.150);
+}
+
+.modal-content {
+    width: 95%;
+    max-width: 500px;
+    background: white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.modal-btn-closed {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
