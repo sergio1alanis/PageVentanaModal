@@ -43,3 +43,48 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
+.modal-aparecer {
+    animation: aparecer 1s;
+}
+
+.modal-desdeArriba {
+    animation: desdeArriba 1s;
+}
+
+.modal-desdeAbajo {
+    animation: desdeAbajo 1s;
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes desdeArriba {
+    from {
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes desdeAbajo {
+    from {
+        transform: translateY(50vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
